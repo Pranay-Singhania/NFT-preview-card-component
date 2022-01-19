@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | NFT preview card component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: rgba(13,26,45,255);
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .mainout {
+        background-color: hsl(216, 50%, 16%);
+        width: 200px;
+        border-radius: 10px;
+        box-shadow: -1px 20px 1px 10px rgb(12, 23, 41), 
+                    -1px 10px 5px 25px rgb(12, 25, 44);      
+      }
+      .mainin {
+        background-color: hsl(216, 50%, 16%);
+        font-family: "Outfit", sans-serif;
+        margin: 13px 13px 8px 13px;
+      }
+      .mainin img {
+        width: 174px;
+        border-radius: 4px;
+      }
+      .head {
+        color: white;
+        font-size: 12px;
+        padding: 10px 0;
+      }
+      .info {
+        color: hsl(215, 51%, 70%);
+        font-size: 10px;
+      }
+      .symbol {
+        font-size: 9px;
+        padding: 15px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .sym{
+        display: flex;
+        align-items: center;
+      }
+      #img1a img{
+        width: 6px;
+      }
+      #img1a{
+        display: flex;
+        align-items: center;
+        width: 6px;
+        margin-right: 4px;
+      }
+      #img1b img{
+        width: 10px;
+      }
+      #img1b{
+        display: flex;
+        align-items: center;
+        width: 10px;
+        margin-right: 4px;
+      }
+      .symbol .p1 {
+        color: hsl(178, 100%, 50%);
+      }
+      .creationof {
+        font-size: 9px;
+        color: hsl(215, 51%, 70%);
+        display: inline;
+      }
+      .white {
+        color: white;
+        font-size: 10px;
+      }
+      .font600 {
+        font-weight: 600;
+      }
+      .font400 {
+        font-weight: 400;
+      }
+      .font300 {
+        font-weight: 300;
+      }
+      .hr{
+        border-top: 1px solid hsl(215, 51%, 70%,.2);
+      }
+      .lastline {
+        height: 40px;
+        display: flex;
+        align-items: center;
+      }
+      .marauto {
+        margin: auto 1px;
+      }
+      #img2 img {
+        width: 18px;
+        border-radius: 50%;
+        border: 1px solid white;
+      }
+      #img2 {
+        height: 20px;
+        width: 20px;
+        margin: 10px 9px 10px 0;
+      }
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="mainout">
+      <div class="mainin">
+        <div class="img">
+          <img src="images/image-equilibrium.jpg" alt="Image error" />
+        </div>
+        <div class="head font600">Equilibrium #3429</div>
+        <div class="info font300">
+          Our Equilibrium collection promotes balance and calm.
+        </div>
+        <div class="symbol">
+          <div class="sym">
+            <div id="img1a"><img src="images/icon-ethereum.svg" alt="image error" /></div>
+            <div class="p1 font600">0.041 ETH</div>
+          </div>
+          <div class="sym">
+            <div id="img1b"><img src="images/icon-clock.svg" alt="image error" /></div>
+            <div id="symbol2" class="info font400">3 days left</div>
+          </div>
+        </div>
+        <div class="hr"></div>
+        <div class="lastline">
+          <div id="img2">
+            <img src="images/image-avatar.png" alt="Image error" />
+          </div>
+          <div class="info font300 marauto">Creation of</div>
+          <div class="white font400 marauto">Jules Wyvern</div>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>. -->
+    <!-- </div> -->
+  </body>
+</html>
